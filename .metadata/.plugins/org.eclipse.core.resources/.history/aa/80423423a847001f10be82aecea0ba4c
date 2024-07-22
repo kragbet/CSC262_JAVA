@@ -1,0 +1,19 @@
+package dataanalyzer;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class analyzer {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<Double> values = new ArrayList<>();
+		
+		System.out.println("Enter floating-point values. Enter 'Done' to end input: ");
+		
+		while (scanner.hasNextDouble()) {
+			values.add(scanner.nextDouble());
+		}
+
+	}
+
+}

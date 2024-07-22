@@ -20,7 +20,6 @@ public class analyzer {
 //		System.out.println(values.size());
 		
 		//average
-		System.out.println("They Average to: ");
 		
 		double sum = 0;
 		for (double value : values) {
@@ -28,7 +27,27 @@ public class analyzer {
 		}
 		
 		double totalA = sum/values.size();
-
+		
+		System.out.println("Average of input values: " + totalA);
+		
+		//smallest and largest in array
+		double small = values.get(0);
+		double large = values.get(0);
+		//Loop through array
+		for (int n = 0; n < values.size(); n++) {
+			//compare numbers with array
+			if(values.get(n) < small) {
+			small = values.get(n);
+			}
+			if(values.get(n) > large) {
+				large = values.get(n);
+			}
+		}
+		System.out.println("Smallest element present in given array: " + small);
+		System.out.println("Largest element present in given array: " + large);
+		
+		// Calculate range
+		double range = large - small;
+		System.out.println("Range of the values: " + range);
 	}
-
 }

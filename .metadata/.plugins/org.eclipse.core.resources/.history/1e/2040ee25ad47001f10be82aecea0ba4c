@@ -1,0 +1,32 @@
+package dataanalyzer;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class analyzer {
+
+	public static void main(String[] args) {
+		try (Scanner scanner = new Scanner(System.in)) {
+			ArrayList<Double> values = new ArrayList<>();
+			
+			System.out.println("Enter 5 floating-point values: ");
+			
+			int i = 0;
+			while (i < 5) {
+				values.add(scanner.nextDouble());
+				i++;
+			} 
+			
+			System.out.println(values);
+			System.out.println("Are these numbers good (Y/N): ");
+			
+			if (scanner.nextInt() == 'Y') {
+				System.out.println("Thanks!");
+			} else {
+				System.out.println("You will have to run the program again");
+			}
+		}
+		
+
+	}
+
+}
