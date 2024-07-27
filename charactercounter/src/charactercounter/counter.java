@@ -1,5 +1,5 @@
 package charactercounter;
-import java.util.ArrayList;
+//import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
@@ -23,9 +23,10 @@ public class counter {
 	    
 	    for (int n = 0; n < listC.size(); n++) {
 	    	if (listC.get(n) == l) {
-	    		l = listC.get(n);
-	    		++count;
-	    		System.out.println(count);
+				char ch = 
+	    		// l = listC.get(n);
+	    		// ++count;
+	    		// System.out.println(count);
 	    	}
 	    }
 	    System.out.println(listC);
