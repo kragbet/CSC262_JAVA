@@ -16,6 +16,7 @@ public class analyzer {
 			i++;
 		} 
 		
+		scanner.close();
 		System.out.println("These are our numbers: " + values);
 //		System.out.println(values.size());
 		
